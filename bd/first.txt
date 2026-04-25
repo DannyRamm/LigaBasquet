@@ -1,0 +1,143 @@
+usuario
+rol
+liga
+temporada
+equipo
+participación
+usuario_equipo
+jugador
+jugador_equipo
+partido
+estadística
+
+
+
+primera versión de bd basquet:
+create database basquet;
+
+use basquet;
+
+CREATE TABLE Rol (
+    codRol INT AUTO_INCREMENT PRIMARY KEY,
+    nomRol VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE Usuario (
+    codUsu INT AUTO_INCREMENT PRIMARY KEY,
+    nomUsu VARCHAR(100),
+    corUsu VARCHAR(100) UNIQUE, -- correo
+    pasUsu VARCHAR(255), -- contraseña/password
+    codRol INT,
+    FOREIGN KEY (codRol) REFERENCES Rol(codRol)
+);
+
+CREATE TABLE Liga (
+    codLig INT AUTO_INCREMENT PRIMARY KEY,
+    nomLig VARCHAR(100)
+);
+
+CREATE TABLE Temporada (
+    codTem INT AUTO_INCREMENT PRIMARY KEY,
+    nomTem VARCHAR(50),
+    feciniTem DATE, -- fecha inicio
+    fecfinTem DATE, -- fecha fin
+    codLig INT,
+    FOREIGN KEY (codLig) REFERENCES Liga(codLig)
+);
+
+CREATE TABLE Equipo (
+    codEqui INT AUTO_INCREMENT PRIMARY KEY,
+    nomEqui VARCHAR(100),
+    ciuEqui VARCHAR(100) -- ciudad
+);
+
+CREATE TABLE Participacion (
+    codPar INT AUTO_INCREMENT PRIMARY KEY,
+    codEqui INT,
+    codTem INT,
+    puntotPar INT DEFAULT 0, -- puntos totales
+    posfinPar INT, -- posicion final
+    FOREIGN KEY (codEqui) REFERENCES Equipo(codEqui),
+    FOREIGN KEY (codTem) REFERENCES Temporada(codTem)
+);
+
+
+CREATE TABLE Usuario_Equipo (
+    codUsu INT,
+    codEqui INT,
+    rolequiUsu VARCHAR(50), -- rol equipo
+    PRIMARY KEY (codUsu, codEqui),
+    FOREIGN KEY (codUsu) REFERENCES Usuario(codUsu),
+    FOREIGN KEY (codEqui) REFERENCES Equipo(codEqui)
+);
+
+
+CREATE TABLE Jugador (
+    codJug INT AUTO_INCREMENT PRIMARY KEY,
+    nomJug VARCHAR(100),
+    edaJug INT, -- edad
+    altJug DECIMAL(4,2) -- altura
+);
+
+
+CREATE TABLE Jugador_Equipo (
+    codJugEqui INT AUTO_INCREMENT PRIMARY KEY,
+    codJug INT,
+    codEqui INT,
+    feciniJugEqui DATE, -- fecha inicio
+    fecfinJugEqui DATE, -- fecha fin
+    FOREIGN KEY (codJug) REFERENCES Jugador(codJug),
+    FOREIGN KEY (codEqui) REFERENCES Equipo(codEqui)
+);
+
+
+CREATE TABLE Cancha (
+    codCan INT AUTO_INCREMENT PRIMARY KEY,
+    nomCan VARCHAR(100),
+    ubiCan VARCHAR(150) -- ubicacion
+);
+
+
+CREATE TABLE Arbitro (
+    codArb INT AUTO_INCREMENT PRIMARY KEY,
+    nomArb VARCHAR(100)
+);
+
+CREATE TABLE Partido (
+    codMat INT AUTO_INCREMENT PRIMARY KEY, -- match osea partido en español
+    codTem INT,
+    codequilocMat INT, -- cod equipo local
+    codequivisMat INT, -- cod equipo visitante
+    codCan INT,
+    fecMat DATETIME, -- fecha
+    estMat VARCHAR(50), -- esado
+    punlocMat INT, -- puntaje_local
+    punvisMat INT, -- puntaje_visitante
+    FOREIGN KEY (codTem) REFERENCES Temporada(codTem),
+    FOREIGN KEY (codequilocMat) REFERENCES Equipo(codEqui),
+    FOREIGN KEY (codequivisMat) REFERENCES Equipo(codEqui),
+    FOREIGN KEY (codCan) REFERENCES Cancha(codCan)
+);
+
+
+
+CREATE TABLE Arbitro_Partido (
+    codArb INT,
+    codMat INT,
+    PRIMARY KEY (codArb, codMat),
+    FOREIGN KEY (codArb) REFERENCES Arbitro(codArb),
+    FOREIGN KEY (codMat) REFERENCES Partido(codMat)
+);
+
+
+CREATE TABLE Estadistica (
+    codEst INT AUTO_INCREMENT PRIMARY KEY,
+    codMat INT,
+    codJug INT,
+    punEst INT, -- puntos
+    rebEst INT, -- rebotes
+    asiEst INT, -- asistencias
+    falEst INT, -- faltas
+    FOREIGN KEY (codMat) REFERENCES Partido(codMat),
+    FOREIGN KEY (codJug) REFERENCES Jugador(codJug)
+);
