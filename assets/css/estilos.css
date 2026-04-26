@@ -1,0 +1,10 @@
+body {
+  background-image: url('../image/taller.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.login-image {
+    transition: background-image 1s ease-in-out;
+}

@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+    <meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+<!--<link rel="preload" href="https://techsenati.edu.pe/favicon.ico" as="image">-->
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="https://techsenati.edu.pe/xmlrpc.php" />
+
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />    <title>Talleres Automotrices en el Perú ¿Cuáles son sus condiciones actuales y por qué necesitan mayor capacitación tecnológica? &#8211; TECH SENATI &#8211; La Primera Escuela de Postgrado Tecnológico en Perú</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel="alternate" type="application/rss+xml" title="TECH SENATI - La Primera Escuela de Postgrado Tecnológico en Perú &raquo; Feed" href="https://techsenati.edu.pe/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TECH SENATI - La Primera Escuela de Postgrado Tecnológico en Perú &raquo; Feed de los comentarios" href="https://techsenati.edu.pe/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="TECH SENATI - La Primera Escuela de Postgrado Tecnológico en Perú &raquo; Comentario Talleres Automotrices en el Perú ¿Cuáles son sus condiciones actuales y por qué necesitan mayor capacitación tecnológica? del feed" href="https://techsenati.edu.pe/talleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/16.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/techsenati.edu.pe\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.8.2"}};
+/*! This file is auto-generated */
+!function(s,n){var o,i,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),a=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===a[t]})}function u(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);for(var n=e.getImageData(16,16,1,1),a=0;a<n.data.length;a++)if(0!==n.data[a])return!1;return!0}function f(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\udedf")}return!1}function g(e,t,n,a){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):s.createElement("canvas"),o=r.getContext("2d",{willReadFrequently:!0}),i=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(function(e){i[e]=t(o,e,n,a)}),i}function t(e){var t=s.createElement("script");t.src=e,t.defer=!0,s.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",i=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){s.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+g.toString()+"("+[JSON.stringify(i),f.toString(),p.toString(),u.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"}),r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=function(e){c(n=e.data),r.terminate(),t(n)})}catch(e){}c(n=g(i,f,p,u))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://techsenati.edu.pe/wp-includes/css/dist/block-library/style.min.css?ver=6.8.2' media='all' />
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='safe-svg-svg-icon-style-inline-css'>
+.safe-svg-cover{text-align:center}.safe-svg-cover .safe-svg-inside{display:inline-block;max-width:100%}.safe-svg-cover svg{height:100%;max-height:100%;max-width:100%;width:100%}
+
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='font-css' href='https://techsenati.edu.pe/wp-content/themes/TECH/assets/css/fonts.css?ver=1.9.18' media='all' />
+<link rel='stylesheet' id='uikit-css-css' href='https://techsenati.edu.pe/wp-content/themes/TECH/assets/css/uikit.min.css?ver=1.9.18' media='all' />
+<link rel='stylesheet' id='variables-css' href='https://techsenati.edu.pe/wp-content/themes/TECH/assets/css/variables.css?ver=1.9.18' media='all' />
+<link rel='stylesheet' id='slider-css' href='https://techsenati.edu.pe/wp-content/themes/TECH/assets/css/slider.css?ver=1.9.18' media='all' />
+<link rel='stylesheet' id='loader-css' href='https://techsenati.edu.pe/wp-content/themes/TECH/assets/css/loader.css?ver=1.9.18' media='all' />
+<link rel='stylesheet' id='style-css' href='https://techsenati.edu.pe/wp-content/themes/TECH/assets/css/style.css?ver=1.9.18' media='all' />
+<link rel='stylesheet' id='responsive-css' href='https://techsenati.edu.pe/wp-content/themes/TECH/assets/css/responsive.css?ver=1.9.18' media='all' />
+<link rel='stylesheet' id='wp-pagenavi-css' href='https://techsenati.edu.pe/wp-content/plugins/wp-pagenavi/pagenavi-css.css?ver=2.70' media='all' />
+<script src="https://techsenati.edu.pe/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://techsenati.edu.pe/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="https://techsenati.edu.pe/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://techsenati.edu.pe/wp-json/wp/v2/posts/684" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://techsenati.edu.pe/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.8.2" />
+<link rel="canonical" href="https://techsenati.edu.pe/talleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica/" />
+<link rel='shortlink' href='https://techsenati.edu.pe/?p=684' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://techsenati.edu.pe/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftechsenati.edu.pe%2Ftalleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://techsenati.edu.pe/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftechsenati.edu.pe%2Ftalleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica%2F&#038;format=xml" />
+<!-- NUEVO TAG SENATI INICIO  -->
+    <!-- Google Tag Manager -->
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+
+})(window,document,'script','dataLayer','GTM-NM2D575F');</script>
+
+<!-- End Google Tag Manager -->
+
+
+<!-- NUEVO TAG SENATI FIN -->
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-239103162-2"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+ 
+
+  gtag('config', 'UA-239103162-2');
+
+</script>
+
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1220945008667305');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1220945008667305&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+  
+  <!-- Yandex.Metrika counter 
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(89445953, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/89445953" style="position:absolute; left:-9999px;" alt="" /></div></noscript>-->
+<!-- /Yandex.Metrika counter -->
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFGZ5KS1YT"></script>
+
+<script>
+
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag(){dataLayer.push(arguments);}
+
+  gtag('js', new Date());
+
+ 
+
+  gtag('config', 'G-TFGZ5KS1YT');
+
+</script>
+<link rel="icon" href="https://techsenati.edu.pe/wp-content/uploads/2025/01/favicon-152-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://techsenati.edu.pe/wp-content/uploads/2025/01/favicon-152.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://techsenati.edu.pe/wp-content/uploads/2025/01/favicon-152.png" />
+<meta name="msapplication-TileImage" content="https://techsenati.edu.pe/wp-content/uploads/2025/01/favicon-152.png" />
+    
+<header class="header_full">
+    <div class="uk-position-relative">
+        <div class="bloq_asul_position"></div>
+        <div class="uk-container colocar_encima">
+            <div class="uk-flex uk-flex-between uk-flex-middle">
+                <a href="https://techsenati.edu.pe" class="log_header_d">
+                    <picture>
+                        <source media="(max-width:480px)" srcset="https://techsenati.edu.pe/wp-content/uploads/2025/03/Logo-TECH-SENATI-WEB-1.png">
+                        <img src="https://techsenati.edu.pe/wp-content/uploads/2025/03/Logo-TECH-SENATI-WEB-1.png" alt="">
+                    </picture>
+
+                </a>
+                <div class="menu_interno_d uk-flex uk-flex-column">
+
+                    <div class="uk-flex">
+                        <div class="triangulo_menu"></div>
+                        <div class="row_bloq_menu_s uk-flex uk-flex-middle">
+                            <ul class="uk-list uk-flex uk-flex-middle gap_menu_superior">
+                                <li> <a href="https://tech.senati.marketing/" target="_blank">Eventos</a></li>
+                                <li class="cursor_p menu_acceso_estudiante">
+                                    Accesos para estudiantes <span uk-icon="chevron-down"></span>
+                                    <ul class="uk-list bloq_menu_interno2 menu_new_arreglo">
+                                                                                    <li><a href="https://senati.blackboard.com/" target="_blank">Acceso a blackboard</a></li>
+                                                                                    <li><a href="https://teams.microsoft.com" target="_blank">Acceso a Teams</a></li>
+                                                                            </ul>
+                                </li>
+                                <li><a href="#modal-center3" uk-toggle><span uk-icon="search"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row2__bloq_menu_s uk-list uk-flex uk-flex-middle">
+                        <nav>
+                            <ul class="uk-list uk-flex uk-flex-middle">
+                                <li class="cursor_p menu_programas_senati">
+                                    Programas <span uk-icon="chevron-down"></span>
+                                    
+<div class="menu_programas">
+    <div class="row_menu_programas">
+        <div class="uk-container">
+            <div class="uk-flex contenedor_g_m_prog">
+                <div class="uk-width-1-3 fondo_iz_menu_pro">
+                    <div class="bloq_menu_programa_iz">
+                        <h3>Nuestros programas</h3>
+                        <ul class="uk-list uk-flex uk-flex-column filtro_cabecera_programas">
+                                                            <li class="active_progra_m" data-tipoprograma="2">
+                                    <a href="javascript:">
+                                        <span></span>Diplomados tecnológicos</a>
+                                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/programa/icon_fle_azul.svg" alt="">
+
+                                </li>
+                                                    </ul>
+                    </div>
+                </div>
+
+
+                                    <div class="uk-width-expan fondo_de_menu_pro contenedor_categoria_programa contenedor_validar_pro2 activar_programa_menu">
+                        <div class="contenedor_listado_pro">
+                            <div class="cabecera_menu_programa uk-flex uk-flex-middle uk-flex-between">
+                                <h3>Diplomados tecnológicos en convocatoria</h3>
+                                <a href="https://techsenati.edu.pe/categoria/diplomados-tecnologicos" class="link_con_flecha">
+                                    <span>Ver todos los diplomados</span>
+                                    <span uk-icon="arrow-left"></span>
+                                </a>
+                            </div>
+                            <div class="uk-flex  uk-child-width-1-3  uk-grid-small uk-text-center uk-grid" uk-grid>
+
+                                                                    <a href="https://techsenati.edu.pe/programas/gestion-tecnologica-del-equipamiento-biomedico/">
+    <div class="uk-card item_eventos_i quitar_fonto_evento uk-height-1-1">
+        <div class="img_evento uk-position-relative bloq_diplomado_c img_full_h alto_menu_programa">
+            <img src="https://techsenati.edu.pe/wp-content/uploads/2025/01/GTIB-294-x-192.jpg" alt="">
+                            <span class="uk-position-absolute uk-position-top-left bloq_naranja">En convocatoria</span>
+            
+
+        </div>
+        <div class="detalle_evento">
+            <h2 class="titulo_articulo color_blanco">Gestión Tecnológica del Equipamiento Biomédico</h2>
+            <div class="datos_detalle_evento uk-flex uk-flex-column">
+                <div class="item_dato">
+                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_calendar.svg" alt="">
+                    <span class="color_blanco">17 de Julio, 2025</span>
+                </div>
+                <div class="item_dato">
+                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_comp.svg" alt="">
+                    <span class="color_blanco">Modalidad: <b>Remota (En vivo)</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>                                                                    <a href="https://techsenati.edu.pe/programas/ingenieria-de-soldadura/">
+    <div class="uk-card item_eventos_i quitar_fonto_evento uk-height-1-1">
+        <div class="img_evento uk-position-relative bloq_diplomado_c img_full_h alto_menu_programa">
+            <img src="https://techsenati.edu.pe/wp-content/uploads/2025/06/INS-294-x-192.jpg" alt="">
+                            <span class="uk-position-absolute uk-position-top-left bloq_naranja">En convocatoria</span>
+            
+
+        </div>
+        <div class="detalle_evento">
+            <h2 class="titulo_articulo color_blanco">Ingeniería de Soldadura</h2>
+            <div class="datos_detalle_evento uk-flex uk-flex-column">
+                <div class="item_dato">
+                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_calendar.svg" alt="">
+                    <span class="color_blanco">17 de Julio, 2025</span>
+                </div>
+                <div class="item_dato">
+                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_comp.svg" alt="">
+                    <span class="color_blanco">Modalidad: <b>Remota (En vivo)</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>                                                                    <a href="https://techsenati.edu.pe/programas/formacion-de-jefes-y-supervisores/">
+    <div class="uk-card item_eventos_i quitar_fonto_evento uk-height-1-1">
+        <div class="img_evento uk-position-relative bloq_diplomado_c img_full_h alto_menu_programa">
+            <img src="https://techsenati.edu.pe/wp-content/uploads/2025/01/3-Portada-lateral.png" alt="">
+                            <span class="uk-position-absolute uk-position-top-left bloq_naranja">En convocatoria</span>
+            
+
+        </div>
+        <div class="detalle_evento">
+            <h2 class="titulo_articulo color_blanco">Formación de Jefes y Supervisores</h2>
+            <div class="datos_detalle_evento uk-flex uk-flex-column">
+                <div class="item_dato">
+                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_calendar.svg" alt="">
+                    <span class="color_blanco">16 de Agosto, 2025</span>
+                </div>
+                <div class="item_dato">
+                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_comp.svg" alt="">
+                    <span class="color_blanco">Modalidad: <b>Remota (En vivo)</b></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</a>                                
+                            </div>
+                        </div>
+                    </div>
+                
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+                                </li>
+                                <li class="uk-position-relative cursor_p menu_acerca_tech">
+                                    Acerca de TECH <span uk-icon="chevron-down"></span>
+
+                                    <ul class="uk-list bloq_menu_interno">
+                                        <li><a href="https://techsenati.edu.pe/nosotros">Nosotros</a></li>
+                                        <li style="display: none;"><a href="https://techsenati.edu.pe/reglamentos-y-politicas">Reglamentos y Políticas</a></li>
+                                        <li style="display: none;"><a href="https://techsenati.edu.pe/laboratorios-e-instalaciones">Laboratorios e instalaciones</a></li>
+                                        <li><a href="https://techsenati.edu.pe/plana-docentes">Plana docente</a></li>
+
+                                    </ul>
+                                </li>
+                                <li class="cursor_p"><a href="https://techsenati.edu.pe/blog">Blog</a></li>
+                            </ul>
+
+                        </nav>
+                        <a href="#modal-center" class="btn_brand_400_2 quitar_margin_a" uk-toggle>Quiero que me contacten</a>
+                    </div>
+
+                </div>
+
+                <div class="icon_menu_movil">
+                    <div class="row_icon_menu_movil uk-flex uk-flex-middle" uk-toggle="target: #offcanvas-flip_movil">
+                        <div class="triangulo_menu2"></div>
+
+                        <div class="contenedor_movil">
+                            <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/datos/icon_menu_movi.svg" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+<div id="offcanvas-flip_movil" uk-offcanvas="flip: true; overlay: true">
+    <div class="uk-offcanvas-bar uk-flex uk-flex-column uk-flex-between contenedor_menu_modf_movil ">
+        <div class="bloq_1_menu_movil">
+            <div class="cabecera_menu_movil_in uk-flex uk-flex-middle uk-flex-between">
+                <a href="https://techsenati.edu.pe" class="logo_movil_senati_2025">
+                    <img src="https://techsenati.edu.pe/wp-content/uploads/2025/03/Logo-TECH-SENATI-WEB-1.png" alt="">
+                </a>
+                <div class="iconos_dmenu_movil_in uk-flex uk-flex-middle uk-flex-between">
+                    <a href="#modal-center3" uk-toggle><span uk-icon="search"></span></a>
+
+                    <button class="uk-offcanvas-close" type="button" uk-close><img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/datos/icon_cerar_m_b.svg" alt=""></button>
+                </div>
+            </div>
+            <div class="cuerpo_movil_s acordeon_movil_tech">
+                <ul uk-accordion>
+                    <li class="">
+                        <a class="uk-accordion-title" href>Programas</a>
+                        <div class="uk-accordion-content">
+                            <div class="uk-flex uk-flex-column menu_full_eti">
+                                                                    <a href="https://techsenati.edu.pe/categoria/diplomados-tecnologicos" class="uk-flex uk-flex-between">
+                                        <span>Diplomados tecnológicos</span>
+                                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/programa/icon_fle_azul.svg" alt="">
+                                    </a>
+                                
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a class="uk-accordion-title" href>Acerca de TECH</a>
+                        <div class="uk-accordion-content">
+                            <div class="uk-flex uk-flex-column menu_full_eti">
+                                <a href="https://techsenati.edu.pe/nosotros" class="uk-flex uk-flex-between">
+                                    <span>Nosotros</span>
+                                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/programa/icon_fle_azul.svg" alt="">
+                                </a>
+                                <!-- <a href="" class="uk-flex uk-flex-between">
+                                    <span>Reglamentos y Políticas</span>
+                                    <img src="" alt="">
+                                </a> -->
+                                <!-- <a href="" class="uk-flex uk-flex-between">
+                                    <span>Laboratorios e instalaciones</span>
+                                    <img src="" alt="">
+                                </a> -->
+                                <a href="https://techsenati.edu.pe/plana-docentes" class="uk-flex uk-flex-between">
+                                    <span>Plana docente</span>
+                                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/programa/icon_fle_azul.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <a href="https://techsenati.edu.pe/blog" class="link_movil_m">Blog</a>
+                <div class="padd_20_lado">
+                    <a href="#modal-center" uk-toggle class="btn_brand_400 w100_movil modificar_boto_movil_m">Quiero que me contacten</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="bloq_2_menu_movil">
+            <a href="https://tech.senati.marketing/" target="_blank" class="titulo_m_2">Eventos</a>
+            <ul uk-accordion class="acordeon_movil_tech2">
+                <li class="">
+                    <a class="uk-accordion-title titulo_m_2" href>Accesos para estudiantes</a>
+                    <div class="uk-accordion-content">
+                        <div class="uk-flex uk-flex-column menu_full_eti">
+
+                                                            <a href="https://senati.blackboard.com/" target="_blank" class="uk-flex uk-flex-between">
+                                    <span>Acceso a blackboard</span>
+                                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/programa/icon_fle_azul.svg" alt="">
+                                </a>
+                                                            <a href="https://teams.microsoft.com" target="_blank" class="uk-flex uk-flex-between">
+                                    <span>Acceso a Teams</span>
+                                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/programa/icon_fle_azul.svg" alt="">
+                                </a>
+                            
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="redes_footer uk-flex uk-flex-center">
+                                    <a href="https://www.facebook.com/Tech.Senati" target="_blank">
+                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/redes/icon_face.svg" alt="">
+                    </a>
+                                                
+                    <a href="https://www.instagram.com/techsenatipostgrado/" target="_blank">
+                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/redes/icon_insta.svg" alt="">
+                    </a>
+                                                    <a href="https://pe.linkedin.com/school/techsenati/?trk=nav_type_overview" target="_blank">
+                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/redes/icon_link.svg" alt="">
+                    </a>
+                            </div>
+
+
+
+
+
+        </div>
+    </div>
+</div>
+<div id="modal-center" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+
+        <button class="uk-modal-close-default btn_cerrar_form" type="button" uk-close>
+            <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_cerrar_n.svg" alt="">
+        </button>
+        <div class="cabecera_formularo">
+            <h3>Formulario de contacto</h3>
+            <p>Proporciónanos tus datos de contacto para ofrecerte una asesoría completa y brindarte más información.</p>
+        </div>
+        <div class="contendor_formulario">
+            <form action="" method="post" id="form_contacto_g">
+
+                <input type="hidden" name="action" value="form_contact_main">
+                <input type="hidden" name="form_origen" value="form_contacto">
+                <input type="hidden" name="nonce" value="ff1dd704f2">
+                <input type="hidden" name="utm_source" id="utm_source" value="">
+                <input type="hidden" name="utm_medium" id="utm_medium" value="">
+                <input type="hidden" name="utm_campaign" id="utm_campaign" value="">
+                <input type="hidden" name="utm_term" id="utm_term" value="">
+                <input type="hidden" name="utm_content" id="utm_content" value="">
+
+                <div class="casillas_formualrio uk-flex uk-flex-wrap uk-flex-between">
+                    <label class="uk-flex uk-flex-column">
+                        <span>Tipo de documento</span>
+                        <select name="tipoDocumento" class="tipoDocumento border_gray200_g_b_4 ">
+                            <option value="">Seleccione Opción</option>
+                            <option value="DNI" selected>DNI</option>
+                            <option value="CE">Carnet Extranjeria</option>
+                        </select>
+                    </label>
+                    <label class="uk-flex uk-flex-column">
+                        <span>Número de documento</span>
+                        <input type="text" name="numero_documento" id="numero_documento" class="border_gray200_g_b_4">
+                    </label>
+                    <label class="uk-flex uk-flex-column">
+                        <span>Nombres</span>
+                        <input type="text" name="nombres" id="nombres" class="border_gray200_g_b_4">
+                    </label>
+                    <label class="uk-flex uk-flex-column">
+                        <span>Apellidos</span>
+                        <input type="text" name="apellidos" id="apellidos" class="border_gray200_g_b_4">
+                    </label>
+                                        <label class="uk-flex uk-flex-column">
+                        <span>Región donde reside</span>
+                        <select name="region" id="region" class="border_gray200_g_b_4 ">
+                            <option value="">Seleccionar Región</option>
+                                                                                                <option value="AMAZONAS">AMAZONAS</option>
+                                
+                                                                                                <option value="ANCASH">ANCASH</option>
+                                
+                                                                                                <option value="APURIMAC">APURIMAC</option>
+                                
+                                                                                                <option value="AREQUIPA">AREQUIPA</option>
+                                
+                                                                                                <option value="AYACUCHO">AYACUCHO</option>
+                                
+                                                                                                <option value="CAJAMARCA">CAJAMARCA</option>
+                                
+                                                                                                <option value="CALLAO">CALLAO</option>
+                                
+                                                                                                <option value="CUSCO">CUSCO</option>
+                                
+                                                                                                <option value="HUANCAVELICA">HUANCAVELICA</option>
+                                
+                                                                                                <option value="HUANUCO">HUANUCO</option>
+                                
+                                                                                                <option value="ICA">ICA</option>
+                                
+                                                                                                <option value="JUNIN">JUNIN</option>
+                                
+                                                                                                <option value="LA LIBERTAD">LA LIBERTAD</option>
+                                
+                                                                                                <option value="LAMBAYEQUE">LAMBAYEQUE</option>
+                                
+                                                                                                <option value="LIMA" selected>LIMA</option>
+                                
+                                                                                                <option value="LORETO">LORETO</option>
+                                
+                                                                                                <option value="MADRE DE DIOS">MADRE DE DIOS</option>
+                                
+                                                                                                <option value="MOQUEGUA">MOQUEGUA</option>
+                                
+                                                                                                <option value="PASCO">PASCO</option>
+                                
+                                                                                                <option value="PIURA">PIURA</option>
+                                
+                                                                                                <option value="PUNO">PUNO</option>
+                                
+                                                                                                <option value="SAN MARTIN">SAN MARTIN</option>
+                                
+                                                                                                <option value="TACNA">TACNA</option>
+                                
+                                                                                                <option value="TUMBES">TUMBES</option>
+                                
+                                                                                                <option value="UCAYALI">UCAYALI</option>
+                                
+                                                    </select>
+                    </label>
+
+
+
+                                                                <label class="uk-flex uk-flex-column">
+                            <span>Diplomado de interés</span>
+                            <select name="programID" id="programID" class="border_gray200_g_b_4">
+                                <option value="">Seleccionar</option>
+                                                                    <option value="1344">Ingeniería de Soldadura</option>
+                                                                    <option value="1239">Gestión de Almacenes y Fulfillment Centers</option>
+                                                                    <option value="1243">Inspección de Soldadura</option>
+                                                                    <option value="1238">Gestión Avanzada del Mantenimiento de Maquinaria Pesada</option>
+                                                                    <option value="1154">Ingeniería en Refrigeración y Climatización Industrial</option>
+                                                                    <option value="1142">Agro Exportación para Productos Orgánicos</option>
+                                                                    <option value="1163">Gestión, Planeamiento y Seguridad de Grúas e Izajes de Cargas Suspendidas</option>
+                                                                    <option value="1136">Gestión de la Ciberseguridad</option>
+                                                                    <option value="1147">Gestión de Talleres Automotrices</option>
+                                                                    <option value="515">Supervisón de Soldadura</option>
+                                                            </select>
+                        </label>
+                    
+
+
+                    <label class="uk-flex uk-flex-column">
+                        <span>Celular</span>
+                        <div class="border_gray200_g_b_4 uk-flex uk-flex-between uk-flex-middle">
+                            <input type="text" placeholder="000 000 000" class="quitar_borde " name="celular" id="celular">
+                            <span uk-icon="phone" class="icon_form"></span>
+                        </div>
+                    </label>
+                    <label class="uk-flex uk-flex-column">
+                        <span>Correo electrónico</span>
+                        <div class="border_gray200_g_b_4 uk-flex uk-flex-between uk-flex-middle">
+                            <input type="text" placeholder="ejemplo@gmail.com" class="quitar_borde" name="correo" id="correo">
+                            <span uk-icon="mail" class="icon_form"></span>
+                        </div>
+                    </label>
+
+                                            <label class="uk-flex uk-flex-column">
+                            <span>Contactarme por</span>
+                            <select name="mediocontacto" id="mediocontacto" class="border_gray200_g_b_4">
+                                <option value="">Seleccionar</option>
+                                                                    <option value="Whatsapp">Whatsapp</option>
+                                                                    <option value="Llamada">Llamada</option>
+                                                            </select>
+                        </label>
+                    
+                                            <label class="uk-flex uk-flex-column">
+                            <span>Rango horario de contacto</span>
+                            <select name="horariocontacto" id="horariocontacto" class="border_gray200_g_b_4">
+                                <option value="">Seleccionar</option>
+                                                                    <option value="09AM – 1PM">09AM – 1PM</option>
+                                                                    <option value="2PM – 6PM">2PM – 6PM</option>
+                                                                    <option value="7PM – 10PM">7PM – 10PM</option>
+                                                            </select>
+                        </label>
+                                    </div>
+                <label class="checkbox uk-flex uk-flex-middle text_termino_error">
+                    <input type="checkbox" name="TermsConditions2" id="TermsConditions2" data-gtm-form-interact-field-id="1">
+                    <span class="checkmark"></span>
+                    <p id="textcheck" name="textcheck" class="text_termino">He leído y acepto las <a class="underline" target="_blank" href="https://senati.info/techsenati/Politicas_de_privacidad_y_uso_de_datos.pdf"> políticas de privacidad y uso de datos.</a></p>
+                </label>
+                <button type="submit" class="btn_envio_form">
+                    <span>Enviar</span>
+                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_envio_b.svg" alt="">
+                </button>
+                <div id="form-contacto-response"></div>
+            </form>
+        </div>
+    </div>
+</div><div id="modal-center3" class="uk-flex-top" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical quitar_fondo quitar_border_radios new_ancho_program">
+        <div class="contenedor_buscar_senati uk-flex uk-flex-middle">
+            <form action="" class="form_buscador uk-flex uk-flex-stretch">
+                <input type="text" placeholder="Buscar dentro de TECH SENATI" id="valor_buscar_general">
+                <button type="submit" class="btn_buscar">Buscar</button>
+            </form>
+            <button class="uk-modal-close-default btn_cerrar_form btn_cerrar_form_buscador" type="button" uk-close>
+                <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_cerarr_buscador.svg" alt="">
+            </button>
+        </div>
+
+
+
+
+    </div>
+</div><script>
+    var ajaxurl = 'https://techsenati.edu.pe/wp-admin/admin-ajax.php';
+</script></head>
+
+<body>
+    <div class="ocultar_loader">
+    <div id="global-loader">
+        <div class="whirly-loader"> </div>
+    </div>
+</div><div class="espacio_cabecera_movil"></div>
+<div class="uk-section">
+    <div class="uk-container">
+        <div class="cabecera_banner">
+            <a href="https://techsenati.edu.pe" class="color_gray_950">Inicio</a>
+            <span>/</span>
+            <a href="https://techsenati.edu.pe/blog" class="color_gray_950">Blog</a>
+            <span>/</span>
+            <a href="jacascript:" class="activo_lugar">Talleres Automotrices en el Perú ¿Cuáles son sus condiciones actuales y por qué necesitan mayor capacitación tecnológica?</a>
+        </div>
+
+        <div class="uk-flex contenedor_blog">
+            <div class="uk-width-expand">
+                <div class="cabecera_link_derecho uk-flex uk-flex-middle uk-flex-between">
+                    <h3>Talleres Automotrices en el Perú ¿Cuáles son sus condiciones actuales y por qué necesitan mayor capacitación tecnológica?</h3>
+                </div>
+                <div class="bloq_autor_fecha uk-flex uk-flex-between">
+                    <div class="uk-flex uk-flex-middle gap_10_b colum_movil_blog">
+                        <div class="item_dato uk-flex uk-flex-middle">
+                            <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_perso.svg" alt="">
+                            <span>  - </span>
+                        </div>
+                        <div class="item_dato uk-flex uk-flex-middle">
+                            <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_calendar.svg" alt="">
+                            <span>5 de octubre de 2023</span>
+                        </div>
+                    </div>
+                    <div class="uk-flex uk-flex-middle btn_compartir boton_compartir_blog">
+                        <span>Compartir artículo</span>
+                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_comparit.svg" alt="">
+                        <div class="bloq_compartir_blog">
+                            <div class="redes_compartir_info">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://techsenati.edu.pe/talleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica/" target="_blank"><img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/compartir/r_face.svg" alt=""></a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://techsenati.edu.pe/talleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica/" target="_blank"><img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/compartir/r_link.svg" alt=""></a>
+                                <a href="https://twitter.com/share?url=https://techsenati.edu.pe/talleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica/" target="_blank"><span uk-icon="x"></span></a>
+                                <a href="https://api.whatsapp.com/send?text=%C2%A1Mira+esta+publicaci%C3%B3n%21+https%3A%2F%2Ftechsenati.edu.pe%2Ftalleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica%2F" target="_blank"><img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/compartir/r_wasap.svg" alt=""></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <figure class="img_blog_interno">
+                    <div class="img_full_h">
+                        <img src="https://techsenati.edu.pe/wp-content/uploads/2025/02/TALLER-AUTOMOTRIZ.jpg" alt="">
+                    </div>
+
+                    <!-- <figcaption>El sector industrial también requiere de profesionales capaces de asumir una jefatura o supervisión de un equipo con liderazgo y responsabilidad.</figcaption> -->
+                </figure>
+                <div class="contenedor_textos">
+                    <p><em>«La especialización tecnológica de profesionales en este rubro es fundamental para generar un diferencial en el mercado».</em></p>
+<p>Si bien nuestro país cuenta con un aproximado de 78,000 talleres mecánicos operando para un parque automotor de 2.9 millones de vehículos, según información de la Asociación Automotriz del Perú (AAP), éstos requieren de mayor actualización y capacitación tecnológica para funcionar de forma eficiente y generar un diferencial importante.</p>
+<p>Solo en Lima, existen 38,000 talleres, de los cuales la mayoría cuenta con uno o dos mecánicos especializados en modelos de combustión interna, pero no en modelos electrificados, híbridos o 100% electrónicos. Si bien este dato es importante, llama la atención que la cifra de talleres es alta para la cantidad de autos existente.</p>
+<p>Frente a ello, Guillermo Casanova, docente del Diplomado Tecnológico en Gestión de Talleres Automotrices de TECH SENATI, explica que la especialización tecnológica de profesionales en el rubro automotor y la capacitación se han convertido en grandes diferenciales en cuanto a eficiencia y rentabilidad se trata. “Cuarenta años atrás, el profesional mecánico trabajaba de forma empírica y con herramientas manuales. Hoy, debido a la complejidad de los vehículos, el personal debe capacitarse adquiriendo conocimientos de gestión, mecánica, electrónica, electricidad, informática, hidráulica, seguridad en el trabajo y manejo de residuos peligrosos, para diferenciar su servicio”, destacó el experto.</p>
+<p>En ese sentido, detalló también las nuevas tecnologías para la gestión de talleres automotrices:</p>
+<ul>
+<li><strong>Programas de gestión integral:</strong> que incluyen tecnologías de análisis de datos, desarrollo de la gestión de clientes, unificación de procesos y desarrollo de canales de venta online.</li>
+<li><strong>Aplicaciones móviles:</strong> facilitan la experiencia del cliente al momento de hacer compras, realizar solicitudes, pedidos de equipos, servicios o repuestos, y reclamos.</li>
+<li><strong>Machine learning e inteligencia artificial:</strong> se utilizan en la atención al cliente de forma online y en los sistemas de pagos online. Estas sugieren las necesidades del cliente por medio de datos que dejan al visitar páginas de internet, conociendo sus preferencias y requerimientos.</li>
+<li><strong>Realidad aumentada:</strong> esta tecnología se puede utilizar para el mantenimiento preventivo y correctivo de los autos.</li>
+<li><strong>Big Data:</strong> almacenamiento masivo de datos.</li>
+<li><strong>Tecnología en la nube:</strong> permitirá almacenar la información del negocio en la nube de forma segura y ordenada.</li>
+</ul>
+<p>De esa manera, es importante tener claro que contar con una adecuada gestión beneficia el diseño de procesos acordes con la capacidad económica de los clientes, permite determinar los requerimientos específicos del cliente, así como diseñar procesos fluidos y eficientes de acuerdo con el rubro del negocio y, como consecuencia, mejorar la rentabilidad del taller, frente a un rubro altamente competitivo.</p>
+<p>Frente a ello, TECH SENATI, la primera escuela de postgrado tecnológico del país, brinda capacitaciones, diplomados y cursos especializados en el rubro automotriz, como es el caso del diplomado de Gestión de Talleres Automotrices. Este no solo aporta al conocimiento tecnológico del profesional, sino que brinda los conocimientos necesarios en recursos humanos, marketing, gestión estratégica, filosofía Lean y análisis de procesos, que suman a la eficiencia y rentabilidad del negocio.</p>
+<p><strong>TECH SENATI</strong></p>
+<p>TECH SENATI es la primera escuela de Postgrado Tecnológico del país, que cuenta con avanzada tecnología aplicada a la formación especializada. Cuenta con los espacios educativos más avanzados, de la mano de diversos <em>partners</em> tecnológicos nacionales e internacionales, e involucra al alumnado en la participación de proyectos aplicados a las empresas, adaptándose siempre a las tendencias y necesidades del mercado laboral.</p>
+
+                    
+                    
+
+
+                </div>
+                <div class="bloq_autor_fecha uk-flex uk-flex-left">
+                    <div href="javascript:" class="uk-flex uk-flex-middle btn_compartir boton_compartir_blog">
+                        <span>Compartir artículo</span>
+                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/diplomados/icon_comparit.svg" alt="">
+                        <div class="bloq_compartir_blog">
+                            <div class="redes_compartir_info">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://techsenati.edu.pe/talleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica/" target="_blank"><img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/compartir/r_face.svg" alt=""></a>
+                                <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://techsenati.edu.pe/talleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica/" target="_blank"><img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/compartir/r_link.svg" alt=""></a>
+                                <a href="https://twitter.com/share?url=https://techsenati.edu.pe/talleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica/" target="_blank"><span uk-icon="x"></span></a>
+                                <a href="https://api.whatsapp.com/send?text=%C2%A1Mira+esta+publicaci%C3%B3n%21+https%3A%2F%2Ftechsenati.edu.pe%2Ftalleres-automotrices-en-el-peru-cuales-son-sus-condiciones-actuales-y-por-que-necesitan-mayor-capacitacion-tecnologica%2F" target="_blank"><img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/compartir/r_wasap.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+                    </div>
+
+
+        <div class="formulario_suscripcion border_gray200_g_b_4">
+            <h3 class="titulo_articulo">No te pierdas nuestros próximos artículos</h3>
+            <p class="text_suscripcion">Suscríbete a nuestro boletín completando los siguientes datos.</p>
+            <div class="formulario">
+                <form action="" class="form_suscripcion" name="form_suscripcion" id="formulario_suscripcion" autocomplete="off" novalidate>
+                    <div class="uk-flex uk-flex-between form_suscrip">
+                        <label class="uk-flex uk-flex-column">
+                            <span>Nombres</span>
+                            <input type="text" class="border_gray200_g_b_4" name="nombre" id="nombre" autocomplete="off">
+                        </label>
+                        <label class="uk-flex uk-flex-column">
+                            <span>Apellidos</span>
+                            <input type="text" class="border_gray200_g_b_4" name="apellidos" id="apellidos" autocomplete="off">
+                        </label>
+                        <label class="uk-flex uk-flex-column">
+                            <span>Celular</span>
+                            <div class="border_gray200_g_b_4 uk-flex uk-flex-between uk-flex-middle">
+                                <input type="text" placeholder="000 000 000" class="" name="celular" id="celular" autocomplete="off">
+                                <span uk-icon="phone" class="icon_form"></span>
+                            </div>
+                        </label>
+                        <label class="uk-flex uk-flex-column ">
+                            <span>Correo electrónico</span>
+                            <div class="border_gray200_g_b_4 uk-flex uk-flex-between uk-flex-middle">
+                                <input type="text" placeholder="ejemplo@gmail.com" class="" name="email" id="email" autocomplete="off">
+                                <span uk-icon="mail" class="icon_form"></span>
+                            </div>
+
+                        </label>
+                    </div>
+                    <div class="uk-flex uk-flex-left btn_sus_d">
+                        <button class="btn_brand_400 curpo_pointer">Suscribirse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<footer class="fondo_gray_950">
+    <div>
+        <div class="uk-section-small">
+            <div class="uk-container">
+                <div class="uk-flex uk-flex-middle  uk-flex-column uk-flex-row@s uk-flex-row@m">
+                    <div class="uk-width-expand">
+                        <p class="titulo_info_footer">Información de contacto</p>
+                        <div class="bloq_datos_general uk-flex  uk-flex-middle@s uk-flex-middle@m  uk-flex-column uk-flex-column@s uk-flex-row@m">
+
+                                                            <div class="direccion_g uk-flex uk-flex-middle">
+                                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/datos/icon_ubi2.svg" alt="">
+                                    <span>Av. 28 de Julio 715 – Piso 13, Cercado de Lima.</span>
+                                </div>
+                            
+                            
+                                                            <div class="correo_g uk-flex uk-flex-middle">
+                                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/datos/icon_mail.svg" alt="">
+                                    <span>techsenati@senati.edu.pe</span>
+                                </div>
+                            
+
+
+                        </div>
+                        <p class="terminos_g quitar_639_movil">© 2024 Todos los derechos reservados.</p>
+                    </div>
+                    <div class="uk-width-1-1 uk-width-1-3@s contenedor_redes_movil">
+                        <div class="uk-flex uk-flex-column flex_final_footer">
+                            <div class="redes_footer">
+
+                                                                    <a href="https://www.facebook.com/Tech.Senati" target="_blank">
+                                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/redes/icon_face.svg" alt="">
+                                    </a>
+                                                                                                
+                                    <a href="https://www.instagram.com/techsenatipostgrado/" target="_blank">
+                                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/redes/icon_insta.svg" alt="">
+                                    </a>
+                                                                                                    <a href="https://pe.linkedin.com/school/techsenati/?trk=nav_type_overview" target="_blank">
+                                        <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/redes/icon_link.svg" alt="">
+                                    </a>
+                                                            </div>
+                            <div class="libro_reclamo">
+                                <a href="https://librodereclamaciones.senati.edu.pe/">
+                                    <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/icon_libro.jpeg" alt="">
+                                </a>
+                                <div class="text_libro_2025 uk-flex uk-flex-column uk-width-expand">
+                                    <h2 class="uk-margin-remove">Libro de reclamaciones</h2>
+                                    <p class="uk-margin-remove">Conforme a lo establecido en el código de protección y defensa del consumidor, este establecimiento cuenta con un libro de reclamaciones virtual a tu disposición.</p>
+                                </div>
+                            </div>
+                            <p class="terminos_g terminos_g2">© 2024 Todos los derechos reservados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/TECH\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1220945008667305');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1220945008667305&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js" id="validatejxs-js"></script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/js/uikit.min.js?ver=1.9.18" id="uikit-js-js"></script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/js/uikit-icons.min.js?ver=1.9.18" id="uikit-icon-js"></script>
+<script id="script-js-extra">
+var array_url = {"ajaxurl":"https:\/\/techsenati.edu.pe\/wp-admin\/admin-ajax.php","redirection_home":"https:\/\/techsenati.edu.pe","img_placeholder":"https:\/\/techsenati.edu.pe\/wp-content\/themes\/TECH\/assets\/img\/default-placeholder.png"};
+</script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/js/script.js?ver=1.9.18" id="script-js"></script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/js/banderas.js?ver=1.9.18" id="banderas_js-js"></script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/js/animacion_numero.js?ver=1.9.18" id="numeros_js-js"></script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/js/ficha_postulante.js?ver=1.9.18" id="ficha_postulante-js"></script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/js/ficha_descuento.js?ver=1.9.18" id="ficha_descuento-js"></script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/vendor/jquery-cookie/jquery.cookie.min.js?ver=1.9.18" id="jquery_cookie-js"></script>
+<script src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/vendor/jquery-cookie/cookie.config.min.js?ver=1.9.18" id="jquery_cookie_config-js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
+
+</html>
+
+<div id="modal-center" class="uk-flex-top modal_bien" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <!-- <button class="uk-modal-close-default" type="button" uk-close></button> -->
+        <div class="uk-flex uk-flex-column uk-flex-middle padding_30">
+            <figure class="margin_0">
+                <img src="https://techsenati.edu.pe/wp-content/themes/TECH/assets/img/programa/icon_check_gracias.svg" alt="">
+            </figure>
+            <p>Suscripción guardada correctamente.</p>
+            <a href="javascript:" uk-close class="btn_cerrar_dialog uk-modal-close-default">Aceptar</a>
+        </div>
+
+    </div>
+</div>
+
+
+<div id="modal-center" class="uk-flex-top modal_mal" uk-modal>
+    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+        <!-- <button class="uk-modal-close-default" type="button" uk-close></button> -->
+        <div class="uk-flex uk-flex-column uk-flex-middle padding_30">
+            <figure class="margin_0">
+                <span uk-icon="warning" class="icono_error_"></span>
+            </figure>
+            <p>Error al guardar la suscripción.</p>
+            <a href="javascript:" uk-close class="btn_cerrar_dialog uk-modal-close-default">Aceptar</a>
+        </div>
+
+    </div>
+</div>

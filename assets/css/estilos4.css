@@ -1,0 +1,196 @@
+/* ---------- PALETA Y AJUSTES GENERALES ---------- */
+:root{
+  --bg-light:     #f9f9f9;  /* fondo general claro y elegante */
+  --bg-card:      #ffffff;  /* tarjetas, tablas, modales */
+  --bg-header:    #f1f1f1;  /* cabeceras tabla, etc */
+  --text-dark:    #1a1a1a;  /* texto principal */
+  --text-muted:   #6c757d;
+  --radius:       1rem;
+  --shadow-lg:    0 0.5rem 1rem rgba(0,0,0,.08);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  font-family: "Segoe UI", system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+/* ---------- TARJETAS ---------- */
+.card{
+  background-color: var(--bg-card);
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-custom .card-body{
+  padding: 1.5rem 1.5rem;
+}
+
+.card-title_vs{
+  font-size: 2.1rem;        /* más grande */
+  font-weight: 700;
+}
+
+.card-text{
+  font-size: 1.15rem;
+}
+
+/* ---------- ICONOS DE FONDO EN TARJETAS ---------- */
+.icon-bg {
+  position: absolute;
+  right: 1.25rem;
+  bottom: 0.75rem;
+  font-size: 3.2rem;
+  opacity: .2;
+  pointer-events: none;
+  color: #007bff;
+}
+
+/* ---------- TABLA DE USUARIOS ---------- */
+.recent-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.05rem;
+}
+
+.recent-table thead th {
+  background-color: var(--bg-header);
+  color: var(--text-dark);
+  border: none;
+  padding: 1rem .9rem;
+}
+
+.recent-table tbody td {
+  background-color: var(--bg-card);
+  border-top: 1px solid #e4e4e4;
+  color: var(--text-dark);
+  padding: 1rem .9rem;
+}
+
+/* ---------- BADGES DE ESTADO / ROL ---------- */
+.status-badge {
+  padding: .4em .8em;
+  font-size: .9rem;
+  font-weight: 600;
+  border-radius: .5rem;
+  color: #fff;
+}
+.status-process   { background:#0d6efd; }  /* Azul - Admin */
+.status-pending   { background:#f39c12; }  /* Amarillo - Recepción o bloqueado */
+.status-completed { background:#198754; }  /* Verde - Activo o mecánico */
+
+/* ---------- PAGINACIÓN ---------- */
+.pagination .page-link {
+  color: #0d6efd;
+  background: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .5rem;
+}
+.pagination .page-item.active .page-link {
+  background: #0d6efd;
+  border-color: #0d6efd;
+  color: #fff;
+}
+.pagination .page-item.disabled .page-link {
+  background: #e9ecef;
+  color: var(--text-muted);
+}
+
+/* ---------- FORMULARIOS (inputs, selects) ---------- */
+input.form-control,
+select.form-select,
+textarea.form-control {
+  background-color: #fff;
+  color: var(--text-dark);
+  border: 1px solid #ced4da;
+  border-radius: .55rem;
+  padding: .75rem 1rem;
+  font-size: 1rem;
+}
+input.form-control:focus,
+select.form-select:focus,
+textarea.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 .25rem rgba(13, 110, 253, 0.25);
+}
+
+/* ---------- MODALES ---------- */
+.modal-content {
+  background-color: var(--bg-card);
+  color: var(--text-dark);
+  border-radius: var(--radius);
+  border: 1px solid #dee2e6;
+}
+
+.modal-header {
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+  border-top: 1px solid #dee2e6;
+}
+
+/* ---------- BOTONES PERSONALIZADOS ---------- */
+.btn {
+  border-radius: .55rem;
+  font-weight: 600;
+  padding: .6rem 1.25rem;
+  font-size: 1rem;
+}
+.btn-primary   { background: #0d6efd; border: none; }
+.btn-info      { background: #0dcaf0; border: none; }
+.btn-success   { background: #198754; border: none; }
+.btn-danger    { background: #dc3545; border: none; }
+.btn-secondary { background: #6c757d; border: none; }
+
+.btn:hover,
+.btn:focus {
+  opacity: .92;
+}
+
+/* ---------- TOOLTIPS, ALERTAS, ETC. ---------- */
+.alert {
+  border-radius: .55rem;
+  padding: 1rem 1.25rem;
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: #fefefe;
+  border: 1px solid #e0e0e0;
+}
+
+
+
+/* Estilos para el modal de notificaciones */
+#notificacionesModal .list-group-item {
+    border-left: none;
+    border-right: none;
+    transition: all 0.2s;
+}
+
+#notificacionesModal .list-group-item:hover {
+    background-color: #f8f9fa;
+}
+
+#notificacionesModal .list-group-item h6 {
+    font-weight: 600;
+}
+
+#notificacionesModal .list-group-item small {
+    font-size: 0.75rem;
+}
+
+#notificacionesModal .list-group-item p {
+    font-size: 0.9rem;
+    color: #495057;
+}
+
+#notificacionesModal .modal-footer {
+    border-top: 1px solid #e9ecef;
+}
