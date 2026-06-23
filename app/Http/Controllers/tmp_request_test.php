@@ -1,0 +1,1 @@
+<?php $sid="6v6m8vk035su17jgjggfq4c92l"; $opts=["http"=>["method"=>"GET","header"=>"Cookie: PHPSESSID=$sid\r\n"]]; $ctx=stream_context_create($opts); $u="http://localhost/basquet/admin/players.php?accion=obtenerEquipos"; $c=@file_get_contents($u,false,$ctx); if ($c===false){ echo "ERR\n"; } else { echo substr($c,0,500); } ?>

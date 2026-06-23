@@ -1,0 +1,1 @@
+<?php session_start(); $_SESSION["usuario"] = ["id" => 1, "nombre" => "Admin Test", "correo" => "admin@local", "rolNombre" => "Administrador", "rolTipo" => "admin", "codRol" => 1]; echo "SESSION=" . session_id() . "\n"; echo "PATH=" . session_save_path() . "\n"; ?>

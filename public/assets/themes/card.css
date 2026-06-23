@@ -1,0 +1,16 @@
+.card-custom{
+	position:relative;
+	overflow:hidden;
+	color:white;
+	font-size:1rem;
+}
+.icon-bg{
+	position:absolute;
+	right:10px;
+	bottom:15px;
+	font-size:4rem;
+	opacity:0.2;
+}
+.card-title_vs{
+	font-size:1.5rem;
+}

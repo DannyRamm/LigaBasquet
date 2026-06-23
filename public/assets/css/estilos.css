@@ -1,0 +1,367 @@
+:root {
+    --league-red: #c8102e;
+    --league-blue: #17408b;
+    --league-ink: #111827;
+    --league-muted: #6b7280;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: var(--league-ink);
+}
+
+body[data-theme="dark"] {
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+body[data-theme="dark"] .site-header,
+body[data-theme="dark"] .game-card,
+body[data-theme="dark"] .content-panel,
+body[data-theme="dark"] .news-item {
+    background: #111827;
+    color: #e5e7eb;
+    border-color: #243044;
+}
+
+body[data-theme="dark"] .video-card,
+body[data-theme="dark"] .game-center-header,
+body[data-theme="dark"] .bracket-card,
+body[data-theme="dark"] .pricing-card,
+body[data-theme="dark"] .product-card {
+    background: #111827;
+    color: #e5e7eb;
+    border-color: #243044;
+}
+
+.top-strip {
+    background: #070b14;
+    color: #cbd5e1;
+    font-size: 0.82rem;
+}
+
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    position: sticky;
+    top: 0;
+    z-index: 1040;
+}
+
+.brand-mark {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--league-blue), var(--league-red));
+    color: #fff;
+    font-weight: 900;
+    border-radius: 6px;
+    letter-spacing: 0;
+}
+
+.main-nav {
+    gap: 0.2rem;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+.main-nav .nav-link {
+    color: #334155;
+    font-weight: 700;
+    font-size: 0.86rem;
+    padding: 0.75rem 0.65rem;
+}
+
+.main-nav .nav-link.active,
+.main-nav .nav-link:hover {
+    color: var(--league-red);
+}
+
+body[data-theme="dark"] .main-nav .nav-link {
+    color: #cbd5e1;
+}
+
+.header-icon {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #d1d5db;
+    background: transparent;
+    border-radius: 6px;
+    color: inherit;
+}
+
+.scoreboard {
+    background: #0b1220;
+    color: #fff;
+    border-bottom: 3px solid var(--league-red);
+}
+
+.score-track {
+    display: flex;
+    gap: 0.75rem;
+    overflow-x: auto;
+    padding: 0.85rem 0;
+    scroll-snap-type: x mandatory;
+}
+
+.game-card {
+    min-width: 290px;
+    background: #fff;
+    color: #111827;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0.85rem;
+    scroll-snap-align: start;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.team-row {
+    display: grid;
+    grid-template-columns: 34px 1fr auto;
+    align-items: center;
+    gap: 0.55rem;
+    font-weight: 800;
+}
+
+.team-logo {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #e5e7eb;
+    color: #111827;
+    font-size: 0.78rem;
+    font-weight: 900;
+}
+
+.status-live {
+    color: #dc2626;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.status-final {
+    color: #475569;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.status-upcoming {
+    color: #2563eb;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.hero {
+    background: linear-gradient(120deg, #08111f 0%, #14213d 48%, #8f1026 100%);
+    color: #fff;
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    border-radius: 999px;
+    padding: 0.35rem 0.75rem;
+    font-weight: 800;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+}
+
+.hero-title {
+    font-size: clamp(2.2rem, 6vw, 5.2rem);
+    font-weight: 900;
+    line-height: 0.95;
+    letter-spacing: 0;
+}
+
+.featured-score {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.score-number {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 900;
+}
+
+.content-panel {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+    height: 100%;
+}
+
+.news-item {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.section-title {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0;
+}
+
+.quick-link {
+    border-radius: 6px;
+    font-weight: 800;
+}
+
+.site-footer {
+    background: #070b14;
+    color: #cbd5e1;
+}
+
+.login-image {
+    transition: background-image 1s ease-in-out;
+}
+
+.video-card,
+.game-center-header,
+.bracket-card,
+.pricing-card,
+.product-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.video-thumb {
+    min-height: 170px;
+    background: linear-gradient(135deg, #111827, #c8102e);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-size: 2rem;
+}
+
+.video-thumb span {
+    position: absolute;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 0.2rem 0.45rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.team-logo-lg {
+    width: 72px;
+    height: 72px;
+    font-size: 1rem;
+}
+
+.timeline-item {
+    border-left: 4px solid #cbd5e1;
+    padding: 0.8rem 1rem;
+    margin-bottom: 0.75rem;
+    background: #f8fafc;
+    border-radius: 0 8px 8px 0;
+}
+
+.timeline-item.team-home {
+    border-left-color: var(--league-blue);
+}
+
+.timeline-item.team-away {
+    border-left-color: var(--league-red);
+}
+
+.bracket-card,
+.pricing-card,
+.product-card {
+    padding: 1rem;
+}
+
+.pricing-card.featured {
+    border-color: var(--league-red);
+    box-shadow: 0 10px 30px rgba(200, 16, 46, 0.18);
+}
+
+.product-thumb {
+    min-height: 140px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, #e5e7eb, #94a3b8);
+}
+
+.login-page {
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 1rem;
+    background: linear-gradient(120deg, #08111f 0%, #14213d 50%, #8f1026 100%);
+}
+
+.login-card {
+    width: min(100%, 420px);
+    background: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.auth-shell {
+    width: min(100%, 980px);
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+
+.auth-shell .login-card {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.nba-id-panel {
+    background: linear-gradient(135deg, #111827, #c8102e);
+    color: #fff;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.register-page {
+    min-height: 100vh;
+    background: #f4f6f8;
+}
+
+.register-card {
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+}
