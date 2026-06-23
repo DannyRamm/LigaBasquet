@@ -56,3 +56,25 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Liga de Básquet - Laravel
+
+## Instalación
+
+1. composer install
+2. cp .env.example .env
+3. php artisan key:generate
+4. configurar DB en .env
+5. php artisan migrate --seed
+6. php artisan serve
+
+## Roles del sistema
+- Admin
+- Staff
+- Jugadores
+
+## Funcionalidades
+- Gestión de equipos
+- Gestión de jugadores
+- Partidos
+- Estadísticas
