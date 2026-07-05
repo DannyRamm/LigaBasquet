@@ -186,6 +186,8 @@ CREATE TABLE Noticia (
     fechaNot DATE NOT NULL
 );
 
+ALTER TABLE Noticia ADD COLUMN categoriaNot VARCHAR(50) DEFAULT 'General';
+ALTER TABLE Noticia ADD COLUMN imagenNot VARCHAR(255) DEFAULT 'default-news.jpg';
 -- =========================
 -- CONFIGURACION
 -- =========================
@@ -437,7 +439,12 @@ INSERT INTO Noticia (tituloNot, contenidoNot, fechaNot) VALUES
 ('Inicio de Temporada 2024', 'La nueva temporada de LeagueDan comienza con grandes expectativas. Los equipos se preparan para una competencia intensa llena de emoción y talento.', '2024-10-01'),
 ('Nuevo Jugador en Lakers', 'Los Lakers anuncian la incorporación de un nuevo talento prometedor que fortalecerá su roster para la temporada.', '2024-09-15'),
 ('Cambio de Reglas', 'Se implementan nuevas reglas para mejorar el espectáculo y la seguridad en los partidos de la liga.', '2024-08-20');
-
+INSERT INTO Noticia (tituloNot, contenidoNot, fechaNot, categoriaNot, imagenNot) VALUES
+('LeagueDan confirma horarios y sedes para la próxima fecha del torneo', 'La organización del torneo LeagueDan hizo oficial el calendario completo para la jornada que se disputará este fin de semana. Tras reuniones con los delegados de los clubes, se confirmaron los horarios de alta competencia y las sedes principales que contarán con arbitraje profesionalizado. El partido de fondo promete chispas entre los dos líderes del campeonato.', '2026-07-05', 'Breaking', 'programacion.jpg'),
+('Imparables: Halcones mantiene el primer lugar con una racha histórica', 'Con una defensa zonal impecable y una efectividad del 45% en tiros de tres puntos, el conjunto de Halcones logró derrotar a su clásico rival en un cierre de partido no apto para cardíacos. Con este resultado, el líder absoluto de la competencia asegura su ventaja mínima de cara a la fase eliminatoria del torneo regional.', '2026-07-04', 'Equipos', 'halcones.jpg'),
+('¡Poder ofensivo! El base de Titanes es elegido el MVP tras anotar 31 puntos', 'Una actuación histórica se vivió en la última jornada. El armador estrella de Titanes se echó el equipo al hombro completando una planilla espectacular: 31 puntos, 8 asistencias y 4 robos de balón. Su capacidad para romper la defensa en transición dejó sin opciones al rival y lo posiciona como el máximo anotador de la semana.', '2026-07-03', 'Jugadores', 'mvp.jpg'),
+('Alerta de fichaje: Condores refuerza su pintura con un nuevo pivot', 'La directiva de Condores sorprendió al mercado de pases tras anunciar la incorporación de un nuevo centro de 2.03 metros de altura. El jugador llega con el objetivo claro de potenciar el juego interior del roster, corregir las falencias en los rebotes defensivos y brindar mayor rotación para la etapa definitoria del campeonato.', '2026-07-02', 'Fichajes', 'fichaje.jpg'),
+('Estrategia pura: Los cambios tácticos que están revolucionando la liga', 'Varios entrenadores de la liga están implementando sistemas de juego rápido o "Run and Gun", priorizando las posesiones cortas y los tiros perimetrales. Analizamos cómo este cambio en las pizarras ha aumentado el promedio de anotación por partido, convirtiendo a LeagueDan en uno de los espectáculos más dinámicos de la temporada.', '2026-07-01', 'Táctica', 'tactica.jpg');
 -- =========================
 -- USUARIO
 -- (ya estaba bien, sin cambios; ahora sí funciona porque

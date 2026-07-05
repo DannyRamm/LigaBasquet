@@ -1,0 +1,401 @@
+/* =====================================================
+   GENERAL
+===================================================== */
+
+body{
+    background:#f5f7fb;
+}
+
+a{
+    text-decoration:none;
+}
+
+.badge{
+    font-size:.78rem;
+    font-weight:600;
+    padding:.45rem .8rem;
+    border-radius:999px;
+}
+
+/* =====================================================
+   TARJETAS
+===================================================== */
+
+.news-card,
+.side-card,
+.hero-card{
+
+    border:none;
+    border-radius:18px;
+
+    overflow:hidden;
+
+    transition:all .35s ease;
+
+}
+
+.news-card:hover,
+.side-card:hover,
+.hero-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+
+}
+
+/* =====================================================
+   IMAGEN DESTACADA
+===================================================== */
+
+.hero-card{
+
+    position:relative;
+
+    min-height:520px;
+
+}
+
+.hero-img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+}
+
+/* Oscurecer imagen */
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:linear-gradient(
+        to top,
+        rgba(0,0,0,.85),
+        rgba(0,0,0,.10)
+    );
+
+}
+
+/* Texto sobre imagen */
+
+.hero-content{
+
+    position:absolute;
+
+    left:40px;
+
+    right:40px;
+
+    bottom:35px;
+
+    color:#fff;
+
+    z-index:2;
+
+}
+
+.hero-content h2{
+
+    font-size:2.2rem;
+
+    font-weight:700;
+
+    margin-top:15px;
+
+}
+
+.hero-content p{
+
+    font-size:1rem;
+
+    line-height:1.7;
+
+    color:#f3f3f3;
+
+}
+
+.hero-footer{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+}
+
+/* =====================================================
+   NOTICIAS LATERALES
+===================================================== */
+
+.side-card{
+
+    height:125px;
+
+}
+
+.side-img{
+
+    height:125px;
+
+    object-fit:cover;
+
+}
+
+.side-card .card-body{
+
+    padding:14px;
+
+}
+
+.side-card h6{
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:2;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+
+.side-card p{
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:2;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+    margin-bottom:8px;
+
+}
+
+/* =====================================================
+   GRID DE NOTICIAS
+===================================================== */
+
+.news-thumb{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    transition:transform .4s;
+
+}
+
+.news-card:hover .news-thumb{
+
+    transform:scale(1.06);
+
+}
+
+.news-card .card-body{
+
+    padding:22px;
+
+}
+
+.news-card h5{
+
+    font-size:1.15rem;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:2;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+
+.news-card p{
+
+    color:#666;
+
+    line-height:1.6;
+
+    display:-webkit-box;
+
+    -webkit-line-clamp:4;
+
+    -webkit-box-orient:vertical;
+
+    overflow:hidden;
+
+}
+
+/* =====================================================
+   BOTONES
+===================================================== */
+
+.btn{
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* =====================================================
+   TITULOS
+===================================================== */
+
+.display-5{
+
+    font-weight:800;
+
+}
+
+section h3{
+
+    font-weight:700;
+
+}
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width:992px){
+
+    .hero-card{
+
+        min-height:420px;
+
+    }
+
+    .hero-img{
+
+        height:420px;
+
+    }
+
+    .hero-content{
+
+        left:25px;
+
+        right:25px;
+
+    }
+
+    .hero-content h2{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+@media (max-width:768px){
+
+    .hero-card{
+
+        min-height:360px;
+
+    }
+
+    .hero-img{
+
+        height:360px;
+
+    }
+
+    .hero-content{
+
+        left:20px;
+
+        right:20px;
+
+        bottom:20px;
+
+    }
+
+    .hero-content h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .hero-content p{
+
+        display:none;
+
+    }
+
+    .hero-footer{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .side-card{
+
+        height:auto;
+
+    }
+
+    .side-img{
+
+        height:160px;
+
+    }
+
+}
+
+@media (max-width:576px){
+
+    .display-5{
+
+        font-size:2rem;
+
+    }
+
+    .hero-img{
+
+        height:300px;
+
+    }
+
+    .hero-card{
+
+        min-height:300px;
+
+    }
+
+    .news-thumb{
+
+        height:200px;
+
+    }
+
+}
