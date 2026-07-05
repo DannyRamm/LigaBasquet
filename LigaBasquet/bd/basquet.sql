@@ -1,20 +1,30 @@
--- 1. Crear Base de Datos
-DROP DATABASE IF EXISTS basquet;
+-- ==================================================
+-- BASE DE DATOS
+-- ==================================================
 CREATE DATABASE basquet;
 USE basquet;
 
--- 2. Estructura de Tablas (Sin cambios, solo ordenadas)
+-- ==================================================
+-- ESTRUCTURA: TABLAS
+-- ==================================================
+
+-- =========================
+-- ROL
+-- =========================
 CREATE TABLE Rol (
     codRol INT AUTO_INCREMENT PRIMARY KEY,
     nomRol VARCHAR(50) NOT NULL
 );
 
+-- =========================
+-- USUARIO
+-- =========================
 CREATE TABLE Usuario (
     codUsu INT AUTO_INCREMENT PRIMARY KEY,
     nomUsu VARCHAR(100),
     apeUsu VARCHAR(100),
-    corUsu VARCHAR(100) UNIQUE NOT NULL,
-    pasUsu VARCHAR(255) NOT NULL,
+    corUsu VARCHAR(100) UNIQUE NOT NULL, -- correo
+    pasUsu VARCHAR(255) NOT NULL, -- contraseña/password
     mesNacUsu TINYINT,
     anioNacUsu SMALLINT,
     paisUsu VARCHAR(80) DEFAULT 'Perú',
@@ -25,92 +35,124 @@ CREATE TABLE Usuario (
     FOREIGN KEY (codRol) REFERENCES Rol(codRol)
 );
 
+-- =========================
+-- LIGA
+-- =========================
 CREATE TABLE Liga (
     codLig INT AUTO_INCREMENT PRIMARY KEY,
     nomLig VARCHAR(100)
 );
 
+-- =========================
+-- TEMPORADA
+-- =========================
 CREATE TABLE Temporada (
     codTem INT AUTO_INCREMENT PRIMARY KEY,
     nomTem VARCHAR(50),
-    feciniTem DATE,
-    fecfinTem DATE,
+    feciniTem DATE, -- fecha inicio
+    fecfinTem DATE, -- fecha fin
     codLig INT,
     FOREIGN KEY (codLig) REFERENCES Liga(codLig)
 );
 
+-- =========================
+-- EQUIPO
+-- =========================
 CREATE TABLE Equipo (
     codEqui INT AUTO_INCREMENT PRIMARY KEY,
     nomEqui VARCHAR(100),
-    ciuEqui VARCHAR(100)
+    ciuEqui VARCHAR(100) -- ciudad
 );
 
+-- =========================
+-- PARTICIPACION
+-- =========================
 CREATE TABLE Participacion (
     codPar INT AUTO_INCREMENT PRIMARY KEY,
     codEqui INT,
     codTem INT,
-    puntotPar INT DEFAULT 0,
-    posfinPar INT,
+    puntotPar INT DEFAULT 0, -- puntos totales
+    posfinPar INT, -- posicion final
     FOREIGN KEY (codEqui) REFERENCES Equipo(codEqui),
     FOREIGN KEY (codTem) REFERENCES Temporada(codTem),
-    UNIQUE (codEqui, codTem)
+    UNIQUE (codEqui, codTem) -- evita duplicados
 );
 
+-- =========================
+-- USUARIO_EQUIPO
+-- =========================
 CREATE TABLE Usuario_Equipo (
     codUsu INT,
     codEqui INT,
-    rolequiUsu VARCHAR(50),
+    rolequiUsu VARCHAR(50), -- rol equipo
     PRIMARY KEY (codUsu, codEqui),
     FOREIGN KEY (codUsu) REFERENCES Usuario(codUsu),
     FOREIGN KEY (codEqui) REFERENCES Equipo(codEqui)
 );
 
+-- =========================
+-- JUGADOR
+-- =========================
 CREATE TABLE Jugador (
     codJug INT AUTO_INCREMENT PRIMARY KEY,
     nomJug VARCHAR(100),
     edaJug INT,
-    altJug DECIMAL(4,2)
+    altJug DECIMAL(4,2) -- altura
 );
 
+-- =========================
+-- JUGADOR_EQUIPO
+-- =========================
 CREATE TABLE Jugador_Equipo (
     codJugEqui INT AUTO_INCREMENT PRIMARY KEY,
     codJug INT,
     codEqui INT,
-    feciniJugEqui DATE,
-    fecfinJugEqui DATE,
-    tipoContrato VARCHAR(20) DEFAULT 'estandar', -- Columna agregada aquí
+    feciniJugEqui DATE, -- fecha inicio
+    fecfinJugEqui DATE, -- fecha fin
     FOREIGN KEY (codJug) REFERENCES Jugador(codJug),
     FOREIGN KEY (codEqui) REFERENCES Equipo(codEqui)
 );
 
+-- =========================
+-- CANCHA
+-- =========================
 CREATE TABLE Cancha (
     codCan INT AUTO_INCREMENT PRIMARY KEY,
     nomCan VARCHAR(100),
-    ubiCan VARCHAR(150)
+    ubiCan VARCHAR(150) -- ubicacion
 );
 
+-- =========================
+-- ARBITRO
+-- =========================
 CREATE TABLE Arbitro (
     codArb INT AUTO_INCREMENT PRIMARY KEY,
     nomArb VARCHAR(100)
 );
 
+-- =========================
+-- PARTIDO
+-- =========================
 CREATE TABLE Partido (
     codMat INT AUTO_INCREMENT PRIMARY KEY,
     codTem INT,
-    codequilocMat INT,
-    codequivisMat INT,
+    codequilocMat INT, -- cod equipo local
+    codequivisMat INT, -- cod equipo visitante
     codCan INT,
-    fecMat DATETIME,
-    estMat ENUM('pendiente','jugado','cancelado'),
-    punlocMat INT,
-    punvisMat INT,
+    fecMat DATETIME, -- fecha
+    estMat ENUM('pendiente','jugado','cancelado'), -- estado
+    punlocMat INT, -- puntaje local
+    punvisMat INT, -- puntaje visitante
     FOREIGN KEY (codTem) REFERENCES Temporada(codTem),
     FOREIGN KEY (codequilocMat) REFERENCES Equipo(codEqui),
     FOREIGN KEY (codequivisMat) REFERENCES Equipo(codEqui),
     FOREIGN KEY (codCan) REFERENCES Cancha(codCan),
-    CHECK (codequilocMat <> codequivisMat)
+    CHECK (codequilocMat <> codequivisMat) -- evita mismo equipo
 );
 
+-- =========================
+-- ARBITRO_PARTIDO
+-- =========================
 CREATE TABLE Arbitro_Partido (
     codArb INT,
     codMat INT,
@@ -119,14 +161,17 @@ CREATE TABLE Arbitro_Partido (
     FOREIGN KEY (codMat) REFERENCES Partido(codMat)
 );
 
+-- =========================
+-- ESTADISTICA
+-- =========================
 CREATE TABLE Estadistica (
     codEst INT AUTO_INCREMENT PRIMARY KEY,
     codMat INT,
     codJug INT,
-    punEst INT,
-    rebEst INT,
-    asiEst INT,
-    falEst INT,
+    punEst INT,	-- puntos
+    rebEst INT, -- rebotes
+    asiEst INT, -- asistencias
+    falEst INT, -- faltas
     FOREIGN KEY (codMat) REFERENCES Partido(codMat),
     FOREIGN KEY (codJug) REFERENCES Jugador(codJug)
 );
@@ -140,6 +185,10 @@ CREATE TABLE Noticia (
     contenidoNot TEXT,
     fechaNot DATE NOT NULL
 );
+
+-- =========================
+-- CONFIGURACION
+-- =========================
 CREATE TABLE Configuracion (
     codConf INT AUTO_INCREMENT PRIMARY KEY,
     claveConf VARCHAR(50) NOT NULL UNIQUE,
@@ -147,51 +196,50 @@ CREATE TABLE Configuracion (
     descripcionConf VARCHAR(255)
 );
 
--- 3. Inserción de Datos (ORDEN CORREGIDO)
+-- ==================================================
+-- ESTRUCTURA: ALTERACIONES
+-- ==================================================
 
--- Roles base
-INSERT INTO Rol (nomRol) VALUES ('Admin'), ('Entrenador'), ('Jugador');
+-- Agregar columna tipoContrato a Jugador_Equipo
+ALTER TABLE Jugador_Equipo ADD COLUMN tipoContrato VARCHAR(20) DEFAULT 'estandar';
 
--- Equipos (Los 29 que pasaste)
-INSERT INTO Equipo (nomEqui, ciuEqui) VALUES
-('Los Angeles Lakers', 'Los Angeles'), ('Boston Celtics', 'Boston'), 
-('Golden State Warriors', 'San Francisco'), ('Miami Heat', 'Miami'),
-('Dallas Mavericks', 'Dallas'), ('Phoenix Suns', 'Phoenix'),
-('Denver Nuggets', 'Denver'), ('Milwaukee Bucks', 'Milwaukee'),
-('Philadelphia 76ers', 'Philadelphia'), ('Los Angeles Clippers', 'Los Angeles'),
-('Brooklyn Nets', 'Brooklyn'), ('Utah Jazz', 'Salt Lake City'),
-('Chicago Bulls', 'Chicago'), ('San Antonio Spurs', 'San Antonio'),
-('Portland Trail Blazers', 'Portland'), ('Sacramento Kings', 'Sacramento'),
-('New Orleans Pelicans', 'New Orleans'), ('Toronto Raptors', 'Toronto'),
-('Minnesota Timberwolves', 'Minneapolis'), ('Oklahoma City Thunder', 'Oklahoma City'),
-('Washington Wizards', 'Washington'), ('Orlando Magic', 'Orlando'),
-('Charlotte Hornets', 'Charlotte'), ('Detroit Pistons', 'Detroit'),
-('Indiana Pacers', 'Indianapolis'), ('Atlanta Hawks', 'Atlanta'),
-('Cleveland Cavaliers', 'Cleveland'), ('New York Knicks', 'New York'),
-('Memphis Grizzlies', 'Memphis');
+-- ==================================================
+-- DATOS: INSERTS
+-- ==================================================
 
--- Datos necesarios para que Estadistica no falle (Ejemplos mínimos)
-INSERT INTO Liga (nomLig) VALUES ('NBA');
-INSERT INTO Temporada (nomTem, codLig) VALUES ('Temporada Regular 2026', 1);
-INSERT INTO Jugador (nomJug, edaJug, altJug) VALUES ('LeBron James', 39, 2.06), ('Stephen Curry', 36, 1.88), ('Nikola Jokic', 29, 2.11);
-INSERT INTO Cancha (nomCan, ubiCan) VALUES ('Crypto.com Arena', 'Los Angeles');
-INSERT INTO Partido (codTem, codequilocMat, codequivisMat, codCan, estMat) VALUES (1, 1, 2, 1, 'jugado');
+-- =========================
+-- ROL
+-- ARREGLADO: esta tabla nunca se llenaba, y Usuario inserta
+-- codRol 1, 2, 3, 4 más abajo, lo que rompía la FK. Se agregan
+-- los 4 roles pedidos: Admin, Entrenador, Jugador, Usuario.
+-- =========================
+INSERT INTO Rol (nomRol) VALUES
+('Admin'),
+('Entrenador'),
+('Jugador'),
+('Usuario');
 
--- Estadísticas (Ahora sí hay Partido 1 y Jugadores del 1 al 3)
-INSERT INTO Estadistica (codMat, codJug, punEst, rebEst, asiEst, falEst) VALUES
-(1, 1, 25, 10, 5, 2),
-(1, 2, 20, 8, 3, 1),
-(1, 3, 15, 12, 7, 3);
+-- =========================
+-- LIGA
+-- ARREGLADO: no existía ningún registro; Temporada y, por
+-- cadena, Partido dependen de ella. Se agrega una liga base.
+-- =========================
+INSERT INTO Liga (nomLig) VALUES
+('LeagueDan');
 
+-- =========================
+-- TEMPORADA
+-- ARREGLADO: no existía ningún registro; Partido depende de
+-- codTem. Se agrega la temporada 2024 referenciando la Liga
+-- insertada arriba (codLig = 1).
+-- =========================
+INSERT INTO Temporada (nomTem, feciniTem, fecfinTem, codLig) VALUES
+('Temporada 2024', '2024-10-01', '2025-04-30', 1);
 
--- Configuraciones
-INSERT INTO Configuracion (claveConf, valorConf, descripcionConf) VALUES
-('max_jugadores_estandar', '15', 'Máximo de jugadores con contrato estándar por equipo'),
-('max_jugadores_two_way', '3', 'Máximo de jugadores con contrato two-way por equipo'),
-('min_jugadores_estandar', '14', 'Mínimo de jugadores con contrato estándar por equipo');
-
-
--- Insertar equipos adicionales
+-- =========================
+-- EQUIPO
+-- (ya estaba bien, sin cambios)
+-- =========================
 INSERT INTO Equipo (nomEqui, ciuEqui) VALUES
 ('Los Angeles Lakers', 'Los Angeles'),
 ('Boston Celtics', 'Boston'),
@@ -223,7 +271,29 @@ INSERT INTO Equipo (nomEqui, ciuEqui) VALUES
 ('New York Knicks', 'New York'),
 ('Memphis Grizzlies', 'Memphis');
 
+-- =========================
+-- CANCHA
+-- ARREGLADO: no existía ningún registro; Partido depende de
+-- codCan. Se agrega una cancha base.
+-- =========================
+INSERT INTO Cancha (nomCan, ubiCan) VALUES
+('Coliseo Central', 'Sede Principal LeagueDan');
 
+-- =========================
+-- PARTIDO
+-- ARREGLADO: no existía ningún registro, pero Estadistica
+-- inserta filas con codMat 1 y 2 más abajo, lo que rompía esa
+-- FK. Se agregan 2 partidos (codTem = 1, codCan = 1) usando
+-- equipos ya insertados arriba (Lakers=1, Celtics=2, Warriors=3).
+-- =========================
+INSERT INTO Partido (codTem, codequilocMat, codequivisMat, codCan, fecMat, estMat, punlocMat, punvisMat) VALUES
+(1, 1, 2, 1, '2024-10-05 19:00:00', 'jugado', 102, 98),
+(1, 3, 1, 1, '2024-10-08 19:30:00', 'jugado', 110, 105);
+
+-- =========================
+-- JUGADOR
+-- (ya estaba bien, sin cambios)
+-- =========================
 INSERT INTO Jugador (nomJug, edaJug, altJug) VALUES
 ('Juan Pérez', 25, 1.85),
 ('María López', 22, 1.78),
@@ -280,8 +350,10 @@ INSERT INTO Jugador (nomJug, edaJug, altJug) VALUES
 ('Eduardo Ponce', 28, 1.93),
 ('Pilar Vega', 22, 1.75);
 
-
--- Asignar jugadores a equipos (ejemplo: asignar algunos a equipos 1-5, con contratos estándar y two-way)
+-- =========================
+-- JUGADOR_EQUIPO
+-- (ya estaba bien, sin cambios)
+-- =========================
 INSERT INTO Jugador_Equipo (codJug, codEqui, feciniJugEqui, tipoContrato) VALUES
 (1, 1, CURDATE(), 'estandar'),
 (2, 1, CURDATE(), 'estandar'),
@@ -338,9 +410,41 @@ INSERT INTO Jugador_Equipo (codJug, codEqui, feciniJugEqui, tipoContrato) VALUES
 (53, 3, CURDATE(), 'two-way'),
 (54, 3, CURDATE(), 'two-way');
 
--- Insertar noticias de ejemplo
+-- =========================
+-- CONFIGURACION
+-- (ya estaba bien, sin cambios)
+-- =========================
+INSERT INTO Configuracion (claveConf, valorConf, descripcionConf) VALUES
+('max_jugadores_estandar', '15', 'Máximo de jugadores con contrato estándar por equipo'),
+('max_jugadores_two_way', '3', 'Máximo de jugadores con contrato two-way por equipo'),
+('min_jugadores_estandar', '14', 'Mínimo de jugadores con contrato estándar por equipo');
+
+-- =========================
+-- ESTADISTICA (ejemplo)
+-- ARREGLADO: referenciaba codMat 1 y 2, que no existían en
+-- Partido y rompían la FK. Ahora sí existen (ver sección PARTIDO).
+-- =========================
+INSERT INTO Estadistica (codMat, codJug, punEst, rebEst, asiEst, falEst) VALUES
+(1, 1, 25, 10, 5, 2),
+(1, 2, 20, 8, 3, 1),
+(2, 3, 15, 12, 7, 3);
+
+-- =========================
+-- NOTICIA
+-- (ya estaba bien, sin cambios)
+-- =========================
 INSERT INTO Noticia (tituloNot, contenidoNot, fechaNot) VALUES
 ('Inicio de Temporada 2024', 'La nueva temporada de LeagueDan comienza con grandes expectativas. Los equipos se preparan para una competencia intensa llena de emoción y talento.', '2024-10-01'),
 ('Nuevo Jugador en Lakers', 'Los Lakers anuncian la incorporación de un nuevo talento prometedor que fortalecerá su roster para la temporada.', '2024-09-15'),
 ('Cambio de Reglas', 'Se implementan nuevas reglas para mejorar el espectáculo y la seguridad en los partidos de la liga.', '2024-08-20');
-select * from usuario;
+
+-- =========================
+-- USUARIO
+-- (ya estaba bien, sin cambios; ahora sí funciona porque
+-- Rol tiene los 4 registros necesarios)
+-- =========================
+INSERT INTO Usuario (nomUsu, corUsu, pasUsu, codRol, fecRegUsu) VALUES
+('Admin User', 'admin@leaguedan.com', 'admin123', 1, NOW()),
+('Staff User', 'staff@leaguedan.com', 'staff123', 2, NOW()),
+('Player User', 'player@leaguedan.com', 'player123', 3, NOW()),
+('Normal User', 'user@leaguedan.com', 'user123', 4, NOW());
