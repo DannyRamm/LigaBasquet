@@ -1,9 +1,16 @@
+-- ==================================================
+-- BASE DE DATOS
+-- ==================================================
+CREATE DATABASE basquet;
+USE basquet;
 
-create database basquet;
+-- ==================================================
+-- ESTRUCTURA: TABLAS
+-- ==================================================
 
-use basquet;
-
-
+-- =========================
+-- ROL
+-- =========================
 CREATE TABLE Rol (
     codRol INT AUTO_INCREMENT PRIMARY KEY,
     nomRol VARCHAR(50) NOT NULL
@@ -179,7 +186,62 @@ CREATE TABLE Noticia (
     fechaNot DATE NOT NULL
 );
 
--- Insertar equipos adicionales
+ALTER TABLE Noticia ADD COLUMN categoriaNot VARCHAR(50) DEFAULT 'General';
+ALTER TABLE Noticia ADD COLUMN imagenNot VARCHAR(255) DEFAULT 'default-news.jpg';
+-- =========================
+-- CONFIGURACION
+-- =========================
+CREATE TABLE Configuracion (
+    codConf INT AUTO_INCREMENT PRIMARY KEY,
+    claveConf VARCHAR(50) NOT NULL UNIQUE,
+    valorConf TEXT,
+    descripcionConf VARCHAR(255)
+);
+
+-- ==================================================
+-- ESTRUCTURA: ALTERACIONES
+-- ==================================================
+
+-- Agregar columna tipoContrato a Jugador_Equipo
+ALTER TABLE Jugador_Equipo ADD COLUMN tipoContrato VARCHAR(20) DEFAULT 'estandar';
+
+-- ==================================================
+-- DATOS: INSERTS
+-- ==================================================
+
+-- =========================
+-- ROL
+-- ARREGLADO: esta tabla nunca se llenaba, y Usuario inserta
+-- codRol 1, 2, 3, 4 más abajo, lo que rompía la FK. Se agregan
+-- los 4 roles pedidos: Admin, Entrenador, Jugador, Usuario.
+-- =========================
+INSERT INTO Rol (nomRol) VALUES
+('Admin'),
+('Entrenador'),
+('Jugador'),
+('Usuario');
+
+-- =========================
+-- LIGA
+-- ARREGLADO: no existía ningún registro; Temporada y, por
+-- cadena, Partido dependen de ella. Se agrega una liga base.
+-- =========================
+INSERT INTO Liga (nomLig) VALUES
+('LeagueDan');
+
+-- =========================
+-- TEMPORADA
+-- ARREGLADO: no existía ningún registro; Partido depende de
+-- codTem. Se agrega la temporada 2024 referenciando la Liga
+-- insertada arriba (codLig = 1).
+-- =========================
+INSERT INTO Temporada (nomTem, feciniTem, fecfinTem, codLig) VALUES
+('Temporada 2024', '2024-10-01', '2025-04-30', 1);
+
+-- =========================
+-- EQUIPO
+-- (ya estaba bien, sin cambios)
+-- =========================
 INSERT INTO Equipo (nomEqui, ciuEqui) VALUES
 ('Los Angeles Lakers', 'Los Angeles'),
 ('Boston Celtics', 'Boston'),
@@ -211,30 +273,29 @@ INSERT INTO Equipo (nomEqui, ciuEqui) VALUES
 ('New York Knicks', 'New York'),
 ('Memphis Grizzlies', 'Memphis');
 
--- Insertar algunos registros en Estadistica (ejemplo)
-INSERT INTO Estadistica (codMat, codJug, punEst, rebEst, asiEst, falEst) VALUES
-(1, 1, 25, 10, 5, 2),
-(1, 2, 20, 8, 3, 1),
-(2, 3, 15, 12, 7, 3);
+-- =========================
+-- CANCHA
+-- ARREGLADO: no existía ningún registro; Partido depende de
+-- codCan. Se agrega una cancha base.
+-- =========================
+INSERT INTO Cancha (nomCan, ubiCan) VALUES
+('Coliseo Central', 'Sede Principal LeagueDan');
 
--- Agregar columna tipoContrato a Jugador_Equipo
-ALTER TABLE Jugador_Equipo ADD COLUMN tipoContrato VARCHAR(20) DEFAULT 'estandar';
+-- =========================
+-- PARTIDO
+-- ARREGLADO: no existía ningún registro, pero Estadistica
+-- inserta filas con codMat 1 y 2 más abajo, lo que rompía esa
+-- FK. Se agregan 2 partidos (codTem = 1, codCan = 1) usando
+-- equipos ya insertados arriba (Lakers=1, Celtics=2, Warriors=3).
+-- =========================
+INSERT INTO Partido (codTem, codequilocMat, codequivisMat, codCan, fecMat, estMat, punlocMat, punvisMat) VALUES
+(1, 1, 2, 1, '2024-10-05 19:00:00', 'jugado', 102, 98),
+(1, 3, 1, 1, '2024-10-08 19:30:00', 'jugado', 110, 105);
 
--- Nueva tabla para configuraciones
-CREATE TABLE Configuracion (
-    codConf INT AUTO_INCREMENT PRIMARY KEY,
-    claveConf VARCHAR(50) NOT NULL UNIQUE,
-    valorConf TEXT,
-    descripcionConf VARCHAR(255)
-);
-
--- Insertar configuraciones de ejemplo
-INSERT INTO Configuracion (claveConf, valorConf, descripcionConf) VALUES
-('max_jugadores_estandar', '15', 'Máximo de jugadores con contrato estándar por equipo'),
-('max_jugadores_two_way', '3', 'Máximo de jugadores con contrato two-way por equipo'),
-('min_jugadores_estandar', '14', 'Mínimo de jugadores con contrato estándar por equipo');
-
--- Insertar jugadores de ejemplo
+-- =========================
+-- JUGADOR
+-- (ya estaba bien, sin cambios)
+-- =========================
 INSERT INTO Jugador (nomJug, edaJug, altJug) VALUES
 ('Juan Pérez', 25, 1.85),
 ('María López', 22, 1.78),
@@ -291,7 +352,10 @@ INSERT INTO Jugador (nomJug, edaJug, altJug) VALUES
 ('Eduardo Ponce', 28, 1.93),
 ('Pilar Vega', 22, 1.75);
 
--- Asignar jugadores a equipos (ejemplo: asignar algunos a equipos 1-5, con contratos estándar y two-way)
+-- =========================
+-- JUGADOR_EQUIPO
+-- (ya estaba bien, sin cambios)
+-- =========================
 INSERT INTO Jugador_Equipo (codJug, codEqui, feciniJugEqui, tipoContrato) VALUES
 (1, 1, CURDATE(), 'estandar'),
 (2, 1, CURDATE(), 'estandar'),
@@ -348,16 +412,45 @@ INSERT INTO Jugador_Equipo (codJug, codEqui, feciniJugEqui, tipoContrato) VALUES
 (53, 3, CURDATE(), 'two-way'),
 (54, 3, CURDATE(), 'two-way');
 
--- Insertar noticias de ejemplo
+-- =========================
+-- CONFIGURACION
+-- (ya estaba bien, sin cambios)
+-- =========================
+INSERT INTO Configuracion (claveConf, valorConf, descripcionConf) VALUES
+('max_jugadores_estandar', '15', 'Máximo de jugadores con contrato estándar por equipo'),
+('max_jugadores_two_way', '3', 'Máximo de jugadores con contrato two-way por equipo'),
+('min_jugadores_estandar', '14', 'Mínimo de jugadores con contrato estándar por equipo');
+
+-- =========================
+-- ESTADISTICA (ejemplo)
+-- ARREGLADO: referenciaba codMat 1 y 2, que no existían en
+-- Partido y rompían la FK. Ahora sí existen (ver sección PARTIDO).
+-- =========================
+INSERT INTO Estadistica (codMat, codJug, punEst, rebEst, asiEst, falEst) VALUES
+(1, 1, 25, 10, 5, 2),
+(1, 2, 20, 8, 3, 1),
+(2, 3, 15, 12, 7, 3);
+
+-- =========================
+-- NOTICIA
+-- (ya estaba bien, sin cambios)
+-- =========================
 INSERT INTO Noticia (tituloNot, contenidoNot, fechaNot) VALUES
 ('Inicio de Temporada 2024', 'La nueva temporada de LeagueDan comienza con grandes expectativas. Los equipos se preparan para una competencia intensa llena de emoción y talento.', '2024-10-01'),
 ('Nuevo Jugador en Lakers', 'Los Lakers anuncian la incorporación de un nuevo talento prometedor que fortalecerá su roster para la temporada.', '2024-09-15'),
 ('Cambio de Reglas', 'Se implementan nuevas reglas para mejorar el espectáculo y la seguridad en los partidos de la liga.', '2024-08-20');
-
-
-
-INSERT INTO Usuario (nomUsu, corUsu, pasUsu, codRol, fecRegUsu)
-VALUES
+INSERT INTO Noticia (tituloNot, contenidoNot, fechaNot, categoriaNot, imagenNot) VALUES
+('LeagueDan confirma horarios y sedes para la próxima fecha del torneo', 'La organización del torneo LeagueDan hizo oficial el calendario completo para la jornada que se disputará este fin de semana. Tras reuniones con los delegados de los clubes, se confirmaron los horarios de alta competencia y las sedes principales que contarán con arbitraje profesionalizado. El partido de fondo promete chispas entre los dos líderes del campeonato.', '2026-07-05', 'Breaking', 'programacion.jpg'),
+('Imparables: Halcones mantiene el primer lugar con una racha histórica', 'Con una defensa zonal impecable y una efectividad del 45% en tiros de tres puntos, el conjunto de Halcones logró derrotar a su clásico rival en un cierre de partido no apto para cardíacos. Con este resultado, el líder absoluto de la competencia asegura su ventaja mínima de cara a la fase eliminatoria del torneo regional.', '2026-07-04', 'Equipos', 'halcones.jpg'),
+('¡Poder ofensivo! El base de Titanes es elegido el MVP tras anotar 31 puntos', 'Una actuación histórica se vivió en la última jornada. El armador estrella de Titanes se echó el equipo al hombro completando una planilla espectacular: 31 puntos, 8 asistencias y 4 robos de balón. Su capacidad para romper la defensa en transición dejó sin opciones al rival y lo posiciona como el máximo anotador de la semana.', '2026-07-03', 'Jugadores', 'mvp.jpg'),
+('Alerta de fichaje: Condores refuerza su pintura con un nuevo pivot', 'La directiva de Condores sorprendió al mercado de pases tras anunciar la incorporación de un nuevo centro de 2.03 metros de altura. El jugador llega con el objetivo claro de potenciar el juego interior del roster, corregir las falencias en los rebotes defensivos y brindar mayor rotación para la etapa definitoria del campeonato.', '2026-07-02', 'Fichajes', 'fichaje.jpg'),
+('Estrategia pura: Los cambios tácticos que están revolucionando la liga', 'Varios entrenadores de la liga están implementando sistemas de juego rápido o "Run and Gun", priorizando las posesiones cortas y los tiros perimetrales. Analizamos cómo este cambio en las pizarras ha aumentado el promedio de anotación por partido, convirtiendo a LeagueDan en uno de los espectáculos más dinámicos de la temporada.', '2026-07-01', 'Táctica', 'tactica.jpg');
+-- =========================
+-- USUARIO
+-- (ya estaba bien, sin cambios; ahora sí funciona porque
+-- Rol tiene los 4 registros necesarios)
+-- =========================
+INSERT INTO Usuario (nomUsu, corUsu, pasUsu, codRol, fecRegUsu) VALUES
 ('Admin User', 'admin@leaguedan.com', 'admin123', 1, NOW()),
 ('Staff User', 'staff@leaguedan.com', 'staff123', 2, NOW()),
 ('Player User', 'player@leaguedan.com', 'player123', 3, NOW()),
